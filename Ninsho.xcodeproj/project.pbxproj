@@ -10,6 +10,14 @@
 		FA76056E227F66810013F178 /* Ninsho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA760564227F66810013F178 /* Ninsho.framework */; };
 		FA760573227F66810013F178 /* NinshoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760572227F66810013F178 /* NinshoTests.swift */; };
 		FA760575227F66810013F178 /* Ninsho.h in Headers */ = {isa = PBXBuildFile; fileRef = FA760567227F66810013F178 /* Ninsho.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA760585227F66940013F178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760584227F66940013F178 /* AppDelegate.swift */; };
+		FA760587227F66940013F178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760586227F66940013F178 /* ViewController.swift */; };
+		FA76058A227F66940013F178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760588227F66940013F178 /* Main.storyboard */; };
+		FA76058C227F66950013F178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA76058B227F66950013F178 /* Assets.xcassets */; };
+		FA76058F227F66950013F178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA76058D227F66950013F178 /* LaunchScreen.storyboard */; };
+		FA760596227F67270013F178 /* NinsoAuthDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760595227F67270013F178 /* NinsoAuthDriver.swift */; };
+		FA760599227F68400013F178 /* NinsoAuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760598227F68400013F178 /* NinsoAuthUser.swift */; };
+		FA76059D227F69B40013F178 /* JWTAuthDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA76059C227F69B40013F178 /* JWTAuthDriver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,16 @@
 		FA76056D227F66810013F178 /* NinshoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinshoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA760572227F66810013F178 /* NinshoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinshoTests.swift; sourceTree = "<group>"; };
 		FA760574227F66810013F178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA760582227F66940013F178 /* NinshoExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinshoExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA760584227F66940013F178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA760586227F66940013F178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA760589227F66940013F178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA76058B227F66950013F178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA76058E227F66950013F178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA760590227F66950013F178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA760595227F67270013F178 /* NinsoAuthDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinsoAuthDriver.swift; sourceTree = "<group>"; };
+		FA760598227F68400013F178 /* NinsoAuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinsoAuthUser.swift; sourceTree = "<group>"; };
+		FA76059C227F69B40013F178 /* JWTAuthDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTAuthDriver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA76057F227F66940013F178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +80,7 @@
 			children = (
 				FA760566227F66810013F178 /* Ninsho */,
 				FA760571227F66810013F178 /* NinshoTests */,
+				FA760583227F66940013F178 /* NinshoExamples */,
 				FA760565227F66810013F178 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +90,7 @@
 			children = (
 				FA760564227F66810013F178 /* Ninsho.framework */,
 				FA76056D227F66810013F178 /* NinshoTests.xctest */,
+				FA760582227F66940013F178 /* NinshoExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +98,8 @@
 		FA760566227F66810013F178 /* Ninsho */ = {
 			isa = PBXGroup;
 			children = (
+				FA760597227F681F0013F178 /* Protocols */,
+				FA760594227F670D0013F178 /* AuthDrivers */,
 				FA760567227F66810013F178 /* Ninsho.h */,
 				FA760568227F66810013F178 /* Info.plist */,
 			);
@@ -84,6 +113,36 @@
 				FA760574227F66810013F178 /* Info.plist */,
 			);
 			path = NinshoTests;
+			sourceTree = "<group>";
+		};
+		FA760583227F66940013F178 /* NinshoExamples */ = {
+			isa = PBXGroup;
+			children = (
+				FA760584227F66940013F178 /* AppDelegate.swift */,
+				FA760586227F66940013F178 /* ViewController.swift */,
+				FA760588227F66940013F178 /* Main.storyboard */,
+				FA76058B227F66950013F178 /* Assets.xcassets */,
+				FA76058D227F66950013F178 /* LaunchScreen.storyboard */,
+				FA760590227F66950013F178 /* Info.plist */,
+			);
+			path = NinshoExamples;
+			sourceTree = "<group>";
+		};
+		FA760594227F670D0013F178 /* AuthDrivers */ = {
+			isa = PBXGroup;
+			children = (
+				FA760595227F67270013F178 /* NinsoAuthDriver.swift */,
+				FA76059C227F69B40013F178 /* JWTAuthDriver.swift */,
+			);
+			path = AuthDrivers;
+			sourceTree = "<group>";
+		};
+		FA760597227F681F0013F178 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA760598227F68400013F178 /* NinsoAuthUser.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +195,23 @@
 			productReference = FA76056D227F66810013F178 /* NinshoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FA760581227F66940013F178 /* NinshoExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA760591227F66950013F178 /* Build configuration list for PBXNativeTarget "NinshoExamples" */;
+			buildPhases = (
+				FA76057E227F66940013F178 /* Sources */,
+				FA76057F227F66940013F178 /* Frameworks */,
+				FA760580227F66940013F178 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NinshoExamples;
+			productName = NinshoExamples;
+			productReference = FA760582227F66940013F178 /* NinshoExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,8 +224,12 @@
 				TargetAttributes = {
 					FA760563227F66810013F178 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					FA76056C227F66810013F178 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FA760581227F66940013F178 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -160,6 +240,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FA76055A227F66810013F178;
 			productRefGroup = FA760565227F66810013F178 /* Products */;
@@ -168,6 +249,7 @@
 			targets = (
 				FA760563227F66810013F178 /* Ninsho */,
 				FA76056C227F66810013F178 /* NinshoTests */,
+				FA760581227F66940013F178 /* NinshoExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +269,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA760580227F66940013F178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA76058F227F66950013F178 /* LaunchScreen.storyboard in Resources */,
+				FA76058C227F66950013F178 /* Assets.xcassets in Resources */,
+				FA76058A227F66940013F178 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA760599227F68400013F178 /* NinsoAuthUser.swift in Sources */,
+				FA760596227F67270013F178 /* NinsoAuthDriver.swift in Sources */,
+				FA76059D227F69B40013F178 /* JWTAuthDriver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +297,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA760573227F66810013F178 /* NinshoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA76057E227F66940013F178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA760587227F66940013F178 /* ViewController.swift in Sources */,
+				FA760585227F66940013F178 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +318,25 @@
 			targetProxy = FA76056F227F66810013F178 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA760588227F66940013F178 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA760589227F66940013F178 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA76058D227F66950013F178 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA76058E227F66950013F178 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FA760576227F66810013F178 /* Debug */ = {
@@ -341,6 +464,7 @@
 		FA760579227F66810013F178 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.catchpole.Ninsho;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +491,7 @@
 		FA76057A227F66810013F178 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +517,7 @@
 		FA76057C227F66810013F178 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NWLJ33LJ5;
 				INFOPLIST_FILE = NinshoTests/Info.plist;
@@ -409,6 +536,7 @@
 		FA76057D227F66810013F178 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NWLJ33LJ5;
 				INFOPLIST_FILE = NinshoTests/Info.plist;
@@ -418,6 +546,42 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tech.catchpole.NinshoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA760592227F66950013F178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NWLJ33LJ5;
+				INFOPLIST_FILE = NinshoExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.catchpole.NinshoExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA760593227F66950013F178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NWLJ33LJ5;
+				INFOPLIST_FILE = NinshoExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.catchpole.NinshoExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,6 +614,15 @@
 			buildConfigurations = (
 				FA76057C227F66810013F178 /* Debug */,
 				FA76057D227F66810013F178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA760591227F66950013F178 /* Build configuration list for PBXNativeTarget "NinshoExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA760592227F66950013F178 /* Debug */,
+				FA760593227F66950013F178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
